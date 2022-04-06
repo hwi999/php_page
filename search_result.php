@@ -79,7 +79,7 @@
 	
 	</div>
 	<div class="container bcontent"><hr />
-		<div class="card" style="width: 1200px;">
+		<div class="card" style="width: 1230px;">
 			<div class="row no-gutters">
 				<div class="col-sm-7">
 					<div class="card-body">
@@ -88,22 +88,26 @@
 							<?php
 							if ($count_a != 0 )
 							{
-								echo "이름: " . $row_a["name"] . " , 핸드폰 번호: " . $row_a["mobile"] . " 님은  " . $row_a["ticket"] . " 티켓을  $count_a 장 예매하셨습니다.<br>";
+								echo "이름: <b>" . $row_a["name"] . "</b> , 핸드폰 번호: <b>" . $row_a["mobile"] . "</b> 님은 <b>뮤지컬 지킬앤하이드</b> 를  <b>".$count_a."</b>장 예매하셨습니다.<br>";
 							}
 							if ($count_b != 0 )
 							{
-								echo "이름: " . $row_b["name"] . " , 핸드폰 번호: " . $row_b["mobile"] . " 님은  " . $row_b["ticket"] . " 티켓을  $count_b 장 예매하셨습니다.<br>";
+								echo "이름: <b>". $row_b["name"] . "</b> , 핸드폰 번호: <b>" . $row_b["mobile"] . "</b> 님은 <b>뮤지컬 라이온 킹</b> 을   <b>".$count_b."</b>장 예매하셨습니다.<br>";
 							}
 							if ($count_c != 0 )
 							{
-								echo "이름: " . $row_c["name"] . " , 핸드폰 번호: " . $row_c["mobile"] . " 님은  " . $row_c["ticket"] . " 티켓을  $count_c 장 예매하셨습니다.<br>";
+								echo "이름: <b>" . $row_c["name"] . "</b> , 핸드폰 번호: <b>" . $row_c["mobile"] . "</b> 님은 <b>뮤지컬 데스노트</b> 를 <b>".$count_c."</b>장 예매하셨습니다.<br>";
 							}
 							if (($count_a == 0) and ($count_b == 0) and ($count_c == 0) )
 							{
-								echo '검색결과없음';
+								echo '예매자 정보를 다시 확인해 주세요.';
 							}
 							?>
-							<br><a class="btn btn-primary" href="search.php" role="button" >검색하기</a>
+							
+								
+							
+							<p><br><a class="btn btn-primary" href="search.php" role="button" >검색하기</a>
+							<a class="btn btn-primary" href="index.html" role="button" >메인화면으로</a></p>
 						</div>
 					</div>
 				</div>
